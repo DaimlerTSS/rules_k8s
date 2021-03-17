@@ -417,12 +417,12 @@ _k8s_object_delete = rule(
                 executable = True,
                 allow_files = True,
             ),
-            "reverser": attr.label(
-                default = Label("//k8s:reverser"),
-                cfg = "target",
-                executable = True,
-                allow_files = True,
-            ),
+            # "reverser": attr.label(
+            #     default = Label("//k8s:reverser"),
+            #     cfg = "target",
+            #     executable = True,
+            #     allow_files = True,
+            # ),
             "_template": attr.label(
                 default = Label("//k8s:delete.sh.tpl"),
                 allow_single_file = True,
